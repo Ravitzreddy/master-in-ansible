@@ -1,0 +1,15 @@
+---
+application: ravitzmum
+vars:
+  vpc: 
+    1: "vpc1" 
+    2: "vpc2"  
+ # [ name: "vpc1" , name2: "vpc2" ]
+#vpc_name1: vpc1   #vpc1
+#vpc_name2: vpc2   #vpc2
+#subnet_count: 4
+#subnet1_vpc1_public: subpub-vpc1-1 #public subnet in vpc1
+#subnet2_vpc1_public: subpub-vpc1-2 #public subnet in vpc1
+#subnet3_vpc1_private: subpri-vpc1-3 #private subnet in vpc1
+#subnet4_vpc2_private: subpri-vpc2-4 #private subnet in vpc2
+

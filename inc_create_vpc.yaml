@@ -1,0 +1,11 @@
+---
+  - hosts: localhost
+    connection: local
+    become: true
+    tasks:
+      - name: create vpc
+        ec2_vpc_net:
+          name: " {{ vpc_name }} "
+          state: present
+          cidr_block: "{{ cidr }}"
+          region: "{{ reg }}"

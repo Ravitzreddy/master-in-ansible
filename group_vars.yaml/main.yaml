@@ -1,0 +1,13 @@
+---
+  - hosts: localhost
+    tasks: 
+      - name: msg vars
+        vars:
+          cur_item: " {{current_item.key}}  {{current_item.value}} "
+        debug: var=cur_item
+          #msg: " {{ item }} as {{ my_idx }} "
+        loop: " {{ lookup('dict', vpc ) }} " 
+        loop_control: 
+          index_var: my_idx
+          loop_var: current_item
+  
